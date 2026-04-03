@@ -38,7 +38,7 @@ This project is an IoT-based smart automatic door system that operates based on 
   - Time information
 
 ## Demo
-(Add your video link here)
+[(video link here)](https://youtu.be/nL6bagh-jO4)
 
 ## Images
 ![z7654149909224_ca292329f723d71b148edd85dbb5486a](https://github.com/user-attachments/assets/2f5163c1-a9eb-44fb-b796-406279c94388)
