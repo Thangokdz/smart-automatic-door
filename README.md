@@ -1,28 +1,44 @@
-# smart-automatic-door
-Dùng blynk để kết nối tới đth và điều chỉnh mở đóng cửa thời gian thực
+# Smart Automatic Door System (IoT)
+
+## Description
+This project is an IoT-based smart automatic door system that operates based on real-time conditions such as time schedules, distance detection, and remote control via Blynk.
 
 ## Features
-- Measure distance using ultrasonic sensor (HC-SR04)
-- Display real-time distance on LCD
-- Control servo motor automatically
-- Stable circuit using breadboard and microcontroller
+- Automatic door control using ultrasonic sensor (HC-SR04)
+- Servo motor for opening/closing door
+- Time-based operation using RTC (DS1307)
+- Remote configuration via Blynk app (set open/close time)
+- LCD display for system status
+- Buzzer warning system for suspicious activity
+- WiFi connectivity using ESP32
+- Real-time notifications via Blynk
 
 ## Hardware Components
-- Microcontroller (ESP32 / Arduino)
+- ESP32
 - Ultrasonic Sensor (HC-SR04)
-- LCD Display (16x2)
 - Servo Motor
+- LCD 16x2 (I2C)
+- RTC DS1307
+- Buzzer
 - Breadboard & jumper wires
 
 ## Working Principle
-The ultrasonic sensor continuously measures the distance. 
-The data is sent to the microcontroller, which processes it and:
-- Displays the distance on the LCD
-- Controls the servo motor based on predefined conditions (e.g., open/close)
+- The system connects to WiFi and Blynk for remote control
+- Users can set opening and closing time via Blynk app
+- During daytime:
+  - Door opens automatically when a person is detected
+- During nighttime:
+  - Door remains closed
+  - If motion is detected near the door → buzzer alarm + warning message
+  - Sends notification to Blynk after a delay
+
+- LCD displays:
+  - System status (OPEN / CLOSED)
+  - Warning messages
+  - Time information
 
 ## Demo
-(YouTube link)
+(Add your video link here)
 
 ## Images
-![z7654149909224_ca292329f723d71b148edd85dbb5486a](https://github.com/user-attachments/assets/090802b4-17d6-4562-a27b-e743a7ad33ee)
-
+![z7654149909224_ca292329f723d71b148edd85dbb5486a](https://github.com/user-attachments/assets/2f5163c1-a9eb-44fb-b796-406279c94388)
